@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Schede Esame Karate 5° Dan</title>
+<link rel="icon" type="image/png" href="image/favicon.png">
+<link rel="apple-touch-icon" href="image/logo.png">
 <style>
   :root {
     --bg: #0f1420;
@@ -255,7 +257,7 @@
     // Kihon
     const num = `<strong>${d.numero}°</strong>`;
     const titolo = d.titolo ? ` (<em>${d.titolo}</em>)` : "";
-    return `Del passaggio <em>${esame}</em>, dimmi il ${num} passaggio del Kihon${titolo} — tutte le combinazioni possibili.`;
+    return `Del passaggio <em>${esame}</em>, dimmi il ${num} passaggio del Kihon${titolo}.`;
   }
 
   // Estrae l'ID video da vari formati di URL YouTube e genera l'embed
@@ -288,8 +290,6 @@
       }
     } else if (typeof sol === "string" && sol.trim() !== "") {
       html += `<div class="single">${sol.replace(/\n/g, "<br>")}</div>`;
-    } else {
-      html += `<div class="empty">— sequenza da inserire a mano nel file <code>domande.js</code> —</div>`;
     }
 
     if (d.video) html += youtubeEmbed(d.video);

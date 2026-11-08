@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="image/logo.png" alt="Palestra Club KB - Cambiago" width="180">
+</p>
+
 # ShotokanEsame5Dan 🥋
 
 Schede interattive per la preparazione dell'esame di **Karate Shotokan 5° Dan** (programma FIKTA 2022).
@@ -69,6 +73,10 @@ Il campo `video` riconosce qualsiasi formato di link YouTube (`watch?v=`, `youtu
 ---
 
 ## Crediti
+
+<p align="center">
+  <img src="image/logo.png" alt="Palestra Club KB - Cambiago" width="120">
+</p>
 
 I **video dimostrativi** e i **contenuti tecnici** sono a cura della
 **Palestra Club KB di Cambiago** — 📷 Instagram: https://www.instagram.com/palestra_clubkb/
