@@ -92,13 +92,14 @@ const DOMANDE = [
     categoria: "Kata",
     nome: "bassaidai",
     soluzione: "",
-    video: "https://www.youtube.com/watch?v=xKz57ID7wwc"
+    video: "https://www.youtube.com/watch?v=WRYZ3FxEb-Q"
   },
   {
     esame: "da cintura marrone (1° kyu) al 1° Dan",
     categoria: "Kata",
     nome: "kankudai",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=4cHTmu1vBvk"
   },
   {
     esame: "da cintura marrone (1° kyu) al 1° Dan",
@@ -180,13 +181,15 @@ const DOMANDE = [
     esame: "dal 1° al 2° Dan",
     categoria: "Kata",
     nome: "enpi",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=PzQyxDKYJJo"
   },
   {
     esame: "dal 1° al 2° Dan",
     categoria: "Kata",
     nome: "jitte",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=2tS1A02Dg6g"
   },
   {
     esame: "dal 1° al 2° Dan",
@@ -283,7 +286,8 @@ const DOMANDE = [
     esame: "dal 2° al 3° Dan",
     categoria: "Kata",
     nome: "gankaku",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=hz8Kzb2OLLs"
   },
   {
     esame: "dal 2° al 3° Dan",
@@ -370,19 +374,22 @@ const DOMANDE = [
     esame: "dal 3° al 4° Dan",
     categoria: "Kata",
     nome: "nijushiho",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=TWGZ-NSBb4Y"
   },
   {
     esame: "dal 3° al 4° Dan",
     categoria: "Kata",
     nome: "sochin",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=xmnBfc7Kgpg"
   },
   {
     esame: "dal 3° al 4° Dan",
     categoria: "Kata",
     nome: "unsu",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=Y9XR30lfYrs"
   }
 
 ];
