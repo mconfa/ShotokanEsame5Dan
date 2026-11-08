@@ -12,6 +12,7 @@
 //   partenza   -> (opzionale) posizione/indicazione di partenza
 //   soluzione  -> Kihon: array di righe (le combinazioni) | Kata: stringa (vuota da riempire)
 //   nome       -> (solo Kata) nome del kata, mostrato in grassetto
+//   video      -> (opzionale) link YouTube: viene incorporato nella risposta
 //
 // Per aggiungere una domanda tutta tua, puoi anche usare il campo opzionale:
 //   domanda    -> testo della domanda gia' pronto (sovrascrive quella generata)
@@ -90,7 +91,8 @@ const DOMANDE = [
     esame: "da cintura marrone (1° kyu) al 1° Dan",
     categoria: "Kata",
     nome: "bassaidai",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=xKz57ID7wwc"
   },
   {
     esame: "da cintura marrone (1° kyu) al 1° Dan",
