@@ -73,9 +73,9 @@ const DOMANDE = [
     numero: "5",
     partenza: "partenza da kamae",
     soluzione: [
-      "maegeri yokogeri kekomi (avanti cg)",
+      "maegeri yokogeri kekomi (avanti cambio gamba)",
       "gedanbarai gyakuzuki (un passo indietro)",
-      "mawashigeri yokogeri kekomi urakenuchi gyakuzuki (avanti cg)"
+      "mawashigeri yokogeri kekomi urakenuchi gyakuzuki (avanti cambio gamba)"
     ]
   },
   {
@@ -84,7 +84,7 @@ const DOMANDE = [
     numero: "6",
     partenza: "partenza da kamae",
     soluzione: [
-      "maegeri - yokogeri - ushirogeri (sg in tre direzioni sul posto)"
+      "maegeri - yokogeri - ushirogeri (stessa gamba in tre direzioni sul posto)"
     ]
   },
   {
@@ -125,11 +125,11 @@ const DOMANDE = [
     esame: "dal 1° al 2° Dan",
     categoria: "Kihon",
     numero: "2",
-    partenza: "indietro kaeashi prolungato + indietro yoriashi",
+    partenza: "",
     soluzione: [
-      "ageuke sotouke (sb) gyakuzuki",
-      "sotouke gedanbarai (sb) urakenuchi gyakuzuki",
-      "gedanbarai uchiuke (sb) kizamizuki gyakuzuki"
+      "ageuke sotouke (stesso braccio) gyakuzuki (indietro kaeashi prolungato + indietro yoriashi)",
+      "sotouke gedanbarai (stesso braccio) urakenuchi gyakuzuki (indietro kaeashi prolungato + indietro yoriashi)",
+      "gedanbarai uchiuke (stesso braccio) kizamizuki gyakuzuki (indietro kaeashi prolungato + indietro yoriashi)"
     ]
   },
   {
@@ -138,18 +138,18 @@ const DOMANDE = [
     numero: "3",
     partenza: "partenza da gedanbarai in kibadachi avanti",
     soluzione: [
-      "yokogeri keage-kekomi (sg 3 passi in kibadachi con spostamento laterale)"
+      "yokogeri keage-kekomi (stessa gamba 3 passi in kibadachi con spostamento laterale)"
     ]
   },
   {
     esame: "dal 1° al 2° Dan",
     categoria: "Kihon",
     numero: "4",
-    partenza: "partenza da kamae (avanti)",
+    partenza: "partenza da kamae",
     soluzione: [
-      "kizami-maegeri maegeri junzuki gyakuzuki",
-      "kizami-mawashigeri mawashigeri gyakuzuki urakenuchi",
-      "kizami-maegeri ushirogeri urakenuchi gyakuzuki"
+      "kizami-maegeri maegeri junzuki gyakuzuki (avanti)",
+      "kizami-mawashigeri mawashigeri gyakuzuki urakenuchi (avanti)",
+      "kizami-maegeri ushirogeri urakenuchi gyakuzuki (avanti)"
     ]
   },
   {
@@ -231,11 +231,12 @@ const DOMANDE = [
     esame: "dal 2° al 3° Dan",
     categoria: "Kihon",
     numero: "3",
-    partenza: "da hachijidachi, indietro gedanbarai in kibadachi (tornare in hachijidachi)",
+    partenza: "da hachijidachi, indietro gedanbarai in kibadachi",
     soluzione: [
       "yokogeri keage (un passo in kibadachi con spostamento laterale)",
       "gedanbarai gyakuzuki in zenkutsudachi (un passo indietro)",
-      "tsugiashi maeashi yokogeri kekomi urakenuchi gyakuzuki (avanti)"
+      "tsugiashi maeashi yokogeri kekomi urakenuchi gyakuzuki (avanti)",
+      "(tornare in hachijidachi)"
     ]
   },
   {
@@ -245,7 +246,7 @@ const DOMANDE = [
     partenza: "partenza da kamae",
     soluzione: [
       "yoriashi kizamizuki maegeri junzuki (avanti)",
-      "sotouke gedanbarai (sb) urakenuchi gyakuzuki (un passo indietro)",
+      "sotouke gedanbarai (stesso braccio) urakenuchi gyakuzuki (un passo indietro)",
       "mawashigeri tsugiashi gyakuzuki (avanti)"
     ]
   },
@@ -256,7 +257,7 @@ const DOMANDE = [
     partenza: "partenza da kamae",
     soluzione: [
       "tsugiashi gyakuzuki tsugiashi maeashi mawashigeri gyakuzuki urakenuchi (avanti)",
-      "mawashigeri uramawashigeri (sg) urakenuchi gyakuzuki (avanti)"
+      "mawashigeri uramawashigeri (stessa gamba) urakenuchi gyakuzuki (avanti)"
     ]
   },
   {
@@ -265,7 +266,7 @@ const DOMANDE = [
     numero: "6",
     partenza: "partenza da kamae",
     soluzione: [
-      "maegeri mawashigeri (sg) gyakuzuki urakenuchi (avanti)",
+      "maegeri mawashigeri (stessa gamba) gyakuzuki urakenuchi (avanti)",
       "oizuki gyakuzuki (un passo indietro)",
       "ushirogeri uraken gyakuzuki mawashigeri gyakuzuki (avanti)"
     ]
@@ -277,7 +278,7 @@ const DOMANDE = [
     partenza: "partenza da kamae",
     soluzione: [
       "kizami-maegeri (o mawashigeri) kizamizuki gyakuzuki (sul posto)",
-      "tsugiashi maeashi mawashigeri maegeri mawashigeri (sg) gyakuzuki (avanti)",
+      "tsugiashi maeashi mawashigeri maegeri mawashigeri (stessa gamba) gyakuzuki (avanti)",
       "tsugiashi maeashi uramawashigeri uraken gyakuzuki (avanti)"
     ]
   },
@@ -322,7 +323,7 @@ const DOMANDE = [
     esame: "dal 3° al 4° Dan",
     categoria: "Kihon",
     numero: "2",
-    partenza: "shihogeri - shizentai c.g. - quattro direzioni",
+    partenza: "shihogeri - shizentai cambio gamba. - quattro direzioni",
     soluzione: [
       "nord: maegeri dx",
       "sud: ushirogeri sx",
@@ -355,7 +356,7 @@ const DOMANDE = [
     numero: "5",
     partenza: "partenza da kamae",
     soluzione: [
-      "kizami yokogeri kekomi oikomizuki urakenuchi (sb) tsugiashi gyakuzuki",
+      "kizami yokogeri kekomi oikomizuki urakenuchi (stesso braccio) tsugiashi gyakuzuki",
       "tsugiashi maeashi uramawashigeri (oppure mawashigeri) (avanti)"
     ]
   },
@@ -365,8 +366,8 @@ const DOMANDE = [
     numero: "6",
     partenza: "partenza da kamae",
     soluzione: [
-      "ushirogeri uramawashigeri (sg) oikomizuki (avanti)",
-      "(oppure) ushirogeri yokogeri kekomi (sg) oizuki"
+      "ushirogeri uramawashigeri (stessa gamba) oikomizuki (avanti)",
+      "(oppure) ushirogeri yokogeri kekomi (stessa gamba) oizuki"
     ]
   },
   {
