@@ -105,7 +105,8 @@ const DOMANDE = [
     esame: "da cintura marrone (1° kyu) al 1° Dan",
     categoria: "Kata",
     nome: "jion",
-    soluzione: ""
+    soluzione: "",
+    video: "https://youtu.be/4cHTmu1vBvk?is=hj2SNDH8Rt1bqNDO"
   },
 
   // ==========================================================================
@@ -195,7 +196,8 @@ const DOMANDE = [
     esame: "dal 1° al 2° Dan",
     categoria: "Kata",
     nome: "hangetsu",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=YasWNWzGrDo"
   },
 
   // ==========================================================================
@@ -293,13 +295,15 @@ const DOMANDE = [
     esame: "dal 2° al 3° Dan",
     categoria: "Kata",
     nome: "kankusho",
-    soluzione: ""
+    soluzione: "",
+    video: "https://youtu.be/pzGC41xQn74?is=Ia4FRvsOtd7Cz6Iu"
   },
   {
     esame: "dal 2° al 3° Dan",
     categoria: "Kata",
     nome: "bassaisho",
-    soluzione: ""
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=HMYQGq-cLJk"
   },
 
   // ==========================================================================
