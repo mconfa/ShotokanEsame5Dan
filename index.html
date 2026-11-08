@@ -189,27 +189,6 @@
   .btn-secondary:hover { filter: brightness(1.15); }
 
   .counter { color: var(--muted); font-size: .82rem; margin-top: 16px; }
-
-  /* Fullscreen: nasconde tutto tranne la card */
-  :fullscreen body,
-  ::backdrop { background: var(--bg); }
-
-  :fullscreen header,
-  :fullscreen .filters,
-  :fullscreen .controls,
-  :fullscreen .counter { display: none !important; }
-
-  :fullscreen .card {
-    position: fixed;
-    inset: 0;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    border: none;
-    overflow-y: auto;
-    padding: 40px 32px;
-  }
 </style>
 </head>
 <body>
@@ -241,10 +220,6 @@
   <div class="controls">
     <button class="action btn-secondary" id="btnReveal">Mostra risposta</button>
     <button class="action btn-primary" id="btnNext">🎲 Nuova domanda casuale</button>
-  </div>
-
-  <div class="controls" style="margin-top:10px;">
-    <button class="action btn-secondary" id="btnFullscreen">⛶ Modalità schermo intero</button>
   </div>
 
   <div class="counter" id="counter"></div>
@@ -396,27 +371,9 @@
   card.addEventListener("click", () => { revealed ? nextRandom() : reveal(); });
   btnReveal.addEventListener("click", (ev) => { ev.stopPropagation(); reveal(); });
   btnNext.addEventListener("click", (ev) => { ev.stopPropagation(); nextRandom(); });
-  btnFullscreen.addEventListener("click", (ev) => { ev.stopPropagation(); toggleFullscreen(); });
   filterEsame.addEventListener("change", rebuildPool);
   filterCategoria.addEventListener("change", rebuildPool);
 
-  const btnFullscreen = document.getElementById("btnFullscreen");
-
-  function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen().catch(() => {});
-      btnFullscreen.textContent = "✕ Esci da schermo intero";
-    } else {
-      document.exitFullscreen();
-      btnFullscreen.textContent = "⛶ Modalità schermo intero";
-    }
-  }
-
-  document.addEventListener("fullscreenchange", () => {
-    if (!document.fullscreenElement) {
-      btnFullscreen.textContent = "⛶ Modalità schermo intero";
-    }
-  });
   document.addEventListener("keydown", (ev) => {
     if (ev.code === "Space" || ev.code === "Enter") { ev.preventDefault(); reveal(); }
     else if (ev.code === "ArrowRight" || ev.key.toLowerCase() === "n") { nextRandom(); }
