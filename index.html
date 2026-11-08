@@ -319,12 +319,16 @@
   function rebuildPool() {
     const e = filterEsame.value;
     const c = filterCategoria.value;
+    // Il 5° Dan richiede di conoscere tutto il programma precedente:
+    // se selezionato "dal 4° al 5° Dan" si pescano tutte le domande.
+    const tuttiEsami = (e === "dal 4° al 5° Dan");
     pool = DOMANDE.filter(d =>
-      (e === "" || d.esame === e) &&
+      (tuttiEsami || e === "" || d.esame === e) &&
       (c === "" || d.categoria === c)
     );
-    counterEl.textContent = `${pool.length} domande disponibili con i filtri attuali` +
-      ` (su ${DOMANDE.length} totali)`;
+    counterEl.textContent = tuttiEsami
+      ? `${pool.length} domande disponibili (tutto il programma — modalità 5° Dan)`
+      : `${pool.length} domande disponibili con i filtri attuali (su ${DOMANDE.length} totali)`;
     lastIndex = -1;
     nextRandom();
   }
@@ -359,6 +363,8 @@
       o.value = e; o.textContent = e;
       filterEsame.appendChild(o);
     });
+    // Default: modalità 5° Dan (tutto il programma)
+    filterEsame.value = "dal 4° al 5° Dan";
   })();
 
   // Eventi

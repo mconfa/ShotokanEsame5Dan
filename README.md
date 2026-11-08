@@ -59,8 +59,7 @@ Campi disponibili per ogni scheda:
 | `esame` | Passaggio di grado (i numeri *"N°"* vengono messi in grassetto). |
 | `categoria` | `"Kihon"` oppure `"Kata"`. |
 | `numero` | *(solo Kihon)* Numero del passaggio. |
-| `titolo` | *(opzionale)* Nome del passaggio, es. `"shihozuki"`. |
-| `partenza` | *(opzionale)* Posizione / indicazione di partenza. |
+| `partenza` | *(opzionale)* Nome del passaggio e/o posizione di partenza, es. `"shihogeri - shizentai heisoku dachi"`. |
 | `soluzione` | Kihon: array di righe (le combinazioni) · Kata: stringa (vuota da riempire). |
 | `nome` | *(solo Kata)* Nome del kata. |
 | `video` | *(opzionale)* Link YouTube: viene incorporato nella risposta. |
