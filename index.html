@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schede Esame Karate 5° Dan</title>
+<style>
+  :root {
+    --bg: #0f1420;
+    --bg2: #161d2e;
+    --card: #1e2740;
+    --card2: #243052;
+    --accent: #e23b3b;
+    --accent2: #ff6b4a;
+    --text: #eef2f8;
+    --muted: #9aa6bf;
+    --ok: #3ecf8e;
+    --line: #2c3758;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #1b2440 0%, var(--bg) 60%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 48px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0 0 4px;
+    letter-spacing: .5px;
+  }
+  header .sub { color: var(--muted); font-size: .9rem; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 760px;
+  }
+  .filters label {
+    display: flex;
+    flex-direction: column;
+    font-size: .72rem;
+    color: var(--muted);
+    gap: 4px;
+  }
+  .filters select {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: .9rem;
+    min-width: 160px;
+    cursor: pointer;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 760px;
+    background: linear-gradient(160deg, var(--card) 0%, var(--card2) 100%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 30px 28px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.4);
+    cursor: pointer;
+    transition: transform .12s ease, border-color .2s ease;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card:hover { border-color: #3a4a7a; }
+  .card:active { transform: scale(.995); }
+
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+  .badge {
+    font-size: .72rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .badge.cat-Kihon { color: #7fb4ff; border-color: #2f4a80; }
+  .badge.cat-Kata  { color: var(--accent2); border-color: #6b3326; }
+
+  .question {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .question strong { color: var(--accent2); font-weight: 800; }
+
+  .reveal-hint {
+    margin-top: auto;
+    padding-top: 18px;
+    color: var(--muted);
+    font-size: .82rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .answer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--line);
+    animation: fade .25s ease;
+  }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px);} to {opacity:1; transform:none;} }
+  .answer .partenza {
+    color: var(--muted);
+    font-style: italic;
+    font-size: .9rem;
+    margin-bottom: 12px;
+  }
+  .answer ol {
+    margin: 0;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .answer li { line-height: 1.5; }
+  .answer .single { line-height: 1.6; font-size: 1.05rem; }
+  .answer .empty {
+    color: var(--muted);
+    font-style: italic;
+  }
+  .answer .label { color: var(--ok); font-size: .78rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    width: 100%;
+    max-width: 760px;
+    flex-wrap: wrap;
+  }
+  button.action {
+    flex: 1;
+    min-width: 180px;
+    border: none;
+    border-radius: 14px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .1s ease, filter .2s ease;
+    color: #fff;
+  }
+  button.action:active { transform: translateY(1px); }
+  .btn-primary { background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%); }
+  .btn-primary:hover { filter: brightness(1.08); }
+  .btn-secondary { background: var(--card2); border: 1px solid var(--line) !important; color: var(--text); }
+  .btn-secondary:hover { filter: brightness(1.15); }
+
+  .counter { color: var(--muted); font-size: .82rem; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>🥋 Schede Esame Karate</h1>
+    <div class="sub">Preparazione 5° Dan — programma FIKTA</div>
+  </header>
+
+  <div class="filters">
+    <label>Passaggio
+      <select id="filterEsame"><option value="">Tutti</option></select>
+    </label>
+    <label>Tipo
+      <select id="filterCategoria">
+        <option value="">Tutti</option>
+        <option value="Kihon">Kihon</option>
+        <option value="Kata">Kata</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="card" id="card">
+    <div class="badges" id="badges"></div>
+    <div class="question" id="question"></div>
+    <div id="answerSlot"></div>
+    <div class="reveal-hint" id="hint">👆 Tocca la scheda per vedere la risposta</div>
+  </div>
+
+  <div class="controls">
+    <button class="action btn-secondary" id="btnReveal">Mostra risposta</button>
+    <button class="action btn-primary" id="btnNext">🎲 Nuova domanda casuale</button>
+  </div>
+
+  <div class="counter" id="counter"></div>
+
+<script src="domande.js"></script>
+<script>
+  const card = document.getElementById("card");
+  const badgesEl = document.getElementById("badges");
+  const questionEl = document.getElementById("question");
+  const answerSlot = document.getElementById("answerSlot");
+  const hintEl = document.getElementById("hint");
+  const counterEl = document.getElementById("counter");
+  const filterEsame = document.getElementById("filterEsame");
+  const filterCategoria = document.getElementById("filterCategoria");
+  const btnReveal = document.getElementById("btnReveal");
+  const btnNext = document.getElementById("btnNext");
+
+  let pool = [];
+  let current = null;
+  let revealed = false;
+  let lastIndex = -1;
+
+  // Grassetto sui numeri di grado (es. "2°")
+  function bold(txt) {
+    return String(txt).replace(/(\d+°)/g, "<strong>$1</strong>");
+  }
+
+  // Costruisce il testo della domanda
+  function buildQuestion(d) {
+    if (d.domanda) return d.domanda; // domanda custom, usata cosi' com'e'
+    const esame = bold(d.esame);
+    if (d.categoria === "Kata") {
+      return `Del passaggio <em>${esame}</em>, esegui il kata <strong>${d.nome}</strong>.`;
+    }
+    // Kihon
+    const num = `<strong>${d.numero}°</strong>`;
+    const titolo = d.titolo ? ` (<em>${d.titolo}</em>)` : "";
+    return `Del passaggio <em>${esame}</em>, dimmi il ${num} passaggio del Kihon${titolo} — tutte le combinazioni possibili.`;
+  }
+
+  // Costruisce il blocco risposta
+  function buildAnswer(d) {
+    let html = `<div class="answer"><div class="label">Risposta</div>`;
+    if (d.partenza) html += `<div class="partenza">(${d.partenza})</div>`;
+
+    const sol = d.soluzione;
+    if (Array.isArray(sol)) {
+      if (sol.length === 1) {
+        html += `<div class="single">${sol[0]}</div>`;
+      } else {
+        html += `<ol>` + sol.map(s => `<li>${s}</li>`).join("") + `</ol>`;
+      }
+    } else if (typeof sol === "string" && sol.trim() !== "") {
+      html += `<div class="single">${sol.replace(/\n/g, "<br>")}</div>`;
+    } else {
+      html += `<div class="empty">— sequenza da inserire a mano nel file <code>domande.js</code> —</div>`;
+    }
+    html += `</div>`;
+    return html;
+  }
+
+  function render(d) {
+    revealed = false;
+    badgesEl.innerHTML =
+      `<span class="badge cat-${d.categoria}">${d.categoria}</span>` +
+      `<span class="badge">${d.esame}</span>` +
+      (d.categoria === "Kihon" ? `<span class="badge">Passaggio ${d.numero}</span>` : "");
+    questionEl.innerHTML = buildQuestion(d);
+    answerSlot.innerHTML = "";
+    hintEl.style.display = "flex";
+  }
+
+  function reveal() {
+    if (!current || revealed) return;
+    answerSlot.innerHTML = buildAnswer(current);
+    hintEl.style.display = "none";
+    revealed = true;
+  }
+
+  function rebuildPool() {
+    const e = filterEsame.value;
+    const c = filterCategoria.value;
+    pool = DOMANDE.filter(d =>
+      (e === "" || d.esame === e) &&
+      (c === "" || d.categoria === c)
+    );
+    counterEl.textContent = `${pool.length} domande disponibili con i filtri attuali` +
+      ` (su ${DOMANDE.length} totali)`;
+    lastIndex = -1;
+    nextRandom();
+  }
+
+  function nextRandom() {
+    if (pool.length === 0) {
+      current = null;
+      badgesEl.innerHTML = "";
+      questionEl.textContent = "Nessuna domanda con questi filtri.";
+      answerSlot.innerHTML = "";
+      hintEl.style.display = "none";
+      return;
+    }
+    let idx;
+    if (pool.length === 1) {
+      idx = 0;
+    } else {
+      do { idx = Math.floor(Math.random() * pool.length); }
+      while (idx === lastIndex); // evita di ripetere la stessa due volte di fila
+    }
+    lastIndex = idx;
+    current = pool[idx];
+    render(current);
+  }
+
+  // Popola il filtro dei passaggi mantenendo l'ordine del file
+  (function initFilters() {
+    const seen = [];
+    DOMANDE.forEach(d => { if (!seen.includes(d.esame)) seen.push(d.esame); });
+    seen.forEach(e => {
+      const o = document.createElement("option");
+      o.value = e; o.textContent = e;
+      filterEsame.appendChild(o);
+    });
+  })();
+
+  // Eventi
+  card.addEventListener("click", reveal);
+  btnReveal.addEventListener("click", (ev) => { ev.stopPropagation(); reveal(); });
+  btnNext.addEventListener("click", (ev) => { ev.stopPropagation(); nextRandom(); });
+  filterEsame.addEventListener("change", rebuildPool);
+  filterCategoria.addEventListener("change", rebuildPool);
+
+  // Tasti: spazio/invio = rivela, freccia dx/N = nuova
+  document.addEventListener("keydown", (ev) => {
+    if (ev.code === "Space" || ev.code === "Enter") { ev.preventDefault(); reveal(); }
+    else if (ev.code === "ArrowRight" || ev.key.toLowerCase() === "n") { nextRandom(); }
+  });
+
+  // Avvio
+  rebuildPool();
+</script>
+</body>
+</html>
