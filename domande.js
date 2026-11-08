@@ -390,6 +390,45 @@ const DOMANDE = [
     nome: "unsu",
     soluzione: "",
     video: "https://www.youtube.com/watch?v=Y9XR30lfYrs"
+  },
+
+  // ==========================================================================
+  // DAL 4° AL 5° DAN
+  // ==========================================================================
+  {
+    esame: "dal 4° al 5° Dan",
+    categoria: "Kata",
+    nome: "gojushiho dai",
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=ipXXlxHmqlI"
+  },
+  {
+    esame: "dal 4° al 5° Dan",
+    categoria: "Kata",
+    nome: "ji-in",
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=QqnkcJ9Hbjo"
+  },
+  {
+    esame: "dal 4° al 5° Dan",
+    categoria: "Kata",
+    nome: "wankan",
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=q5Oik2kNJ8s"
+  },
+  {
+    esame: "dal 4° al 5° Dan",
+    categoria: "Kata",
+    nome: "chinte",
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=DaWKvsyLFn0"
+  },
+  {
+    esame: "dal 4° al 5° Dan",
+    categoria: "Kata",
+    nome: "meikyo",
+    soluzione: "",
+    video: "https://www.youtube.com/watch?v=XVJ8w6slyoc"
   }
 
 ];
