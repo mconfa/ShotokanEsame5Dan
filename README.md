@@ -25,21 +25,20 @@ Funziona anche **offline**: basta aprire `index.html` con un doppio clic, senza 
 
 ## Contenuto
 
-- **37 schede** in totale:
+- **42 schede** in totale:
   - **25 Kihon** — per ogni passaggio, tutte le combinazioni del passaggio numerato.
-  - **12 Kata** — con il **video dimostrativo** incorporato (dove disponibile).
+  - **17 Kata** — tutti con **video dimostrativo** incorporato.
 - Passaggi coperti:
   - da cintura marrone (1° kyu) al 1° Dan
   - dal 1° al 2° Dan
   - dal 2° al 3° Dan
   - dal 3° al 4° Dan
+  - dal 4° al 5° Dan
 
 ### Tipi di domanda
 
-- **Kihon** → *"Del passaggio **dal 2° al 3° Dan**, dimmi il **4°** passaggio del Kihon — tutte le
-  combinazioni possibili."* → la risposta elenca tutte le combinazioni di quel passaggio.
-- **Kata** → *"Del passaggio ..., esegui il kata **bassaidai**."* → la risposta mostra il video
-  dimostrativo (quando presente) e un eventuale spazio per la sequenza.
+- **Kihon** → *"Del passaggio **dal 2° al 3° Dan**, dimmi il **4°** passaggio del Kihon."* → la risposta elenca tutte le combinazioni di quel passaggio.
+- **Kata** → *"Del passaggio ..., esegui il kata **bassaidai**."* → la risposta mostra il video dimostrativo.
 
 ## File del progetto
 

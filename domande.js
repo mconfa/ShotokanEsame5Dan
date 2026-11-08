@@ -169,8 +169,7 @@ const DOMANDE = [
     esame: "dal 1° al 2° Dan",
     categoria: "Kihon",
     numero: "6",
-    titolo: "shiho uke-kime",
-    partenza: "partenza da kamae (oppure eseguita sulle diagonali: N.est, S.ovest, S.est, N.ovest)",
+    partenza: "shiho uke-kime - partenza da kamae (oppure eseguita sulle diagonali: N.est, S.ovest, S.est, N.ovest)",
     soluzione: [
       "Nord: (passo indietro) gedanbarai urakenuchi dx gyakuzuki sx, (passo avanti) mawashigeri sx tsugiashi gyakuzuki dx",
       "Sud: (ruotando yoriashi indietro) gedanbarai urakenuchi dx gyakuzuki sx, tsugiashi maeashi mawashigeri dx tsugiashi gyakuzuki sx (avanti)",
@@ -207,8 +206,7 @@ const DOMANDE = [
     esame: "dal 2° al 3° Dan",
     categoria: "Kihon",
     numero: "1",
-    titolo: "shihozuki",
-    partenza: "partenza da kamae",
+    partenza: "shihozuki - partenza da kamae",
     soluzione: [
       "nord: oizuki",
       "sud: tsugiashi gyakuzuki",
@@ -220,8 +218,7 @@ const DOMANDE = [
     esame: "dal 2° al 3° Dan",
     categoria: "Kihon",
     numero: "2",
-    titolo: "shihogeri",
-    partenza: "shizentai heisoku dachi - quattro direzioni",
+    partenza: "shihogeri - shizentai heisoku dachi - quattro direzioni",
     soluzione: [
       "nord: ren-maegeri (dx/sx)",
       "sud: ren-ushirogeri (dx/sx)",
@@ -313,8 +310,7 @@ const DOMANDE = [
     esame: "dal 3° al 4° Dan",
     categoria: "Kihon",
     numero: "1",
-    titolo: "shiho tateshutouke gyakuzuki",
-    partenza: "in fudodachi",
+    partenza: "shiho tateshutouke gyakuzuki - in fudodachi",
     soluzione: [
       "nord: yoriashi tateshutouke gyakuzuki",
       "sud: yoriashi tateshutouke gyakuzuki",
@@ -326,8 +322,7 @@ const DOMANDE = [
     esame: "dal 3° al 4° Dan",
     categoria: "Kihon",
     numero: "2",
-    titolo: "shihogeri",
-    partenza: "shizentai c.g. - quattro direzioni",
+    partenza: "shihogeri - shizentai c.g. - quattro direzioni",
     soluzione: [
       "nord: maegeri dx",
       "sud: ushirogeri sx",
